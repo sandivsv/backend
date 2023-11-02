@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 const MONGODB_URL=`mongodb+srv://skpkbro:skpkbro@cluster0.r2irbcn.mongodb.net/`;
-const PORT=5000 || process.env.PORT;
+const PORT= process.env.PORT||5000;
 
 
 app.post("/add-profile", async (req, resp) => {
